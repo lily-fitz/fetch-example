@@ -3,9 +3,6 @@ fetch("https://api.github.com/users/lily-fitz/repos")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
-  })
-  .catch((error) => {
-    console.error(error);
   });
 
 // Repository Language Url Fetch
@@ -15,9 +12,6 @@ fetch(
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
-  })
-  .catch((error) => {
-    console.error(error);
   });
 
 // Repository Language Url Fetch w/ Object.keys
@@ -27,9 +21,6 @@ fetch(
   .then((response) => response.json())
   .then((data) => {
     console.log(Object.keys(data));
-  })
-  .catch((error) => {
-    console.error(error);
   });
 
 // Repository Language Url Fetch, adding languages to the page
@@ -43,7 +34,4 @@ fetch(
       newLanguageElement.textContent = language;
       document.body.appendChild(newLanguageElement);
     });
-  })
-  .catch((error) => {
-    console.error(error);
   });
